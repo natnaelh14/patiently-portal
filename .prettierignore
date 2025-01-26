@@ -1,0 +1,18 @@
+.idea
+.nova
+.vscode
+node_modules
+out
+.next
+.env*
+.DS_Store
+pa11y-junit.xml
+pa11y-report.json
+a11y.junit.*
+a11y.report.*
+web.config
+config/robots.txt
+public/sitemap*
+public/robots.txt
+# exclude from rules .env*
+!.env.template
