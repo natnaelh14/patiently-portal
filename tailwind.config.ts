@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   fontFamily: {
-    sans: ['var(--font-geist-sans)'],
+    sans: ["var(--font-geist-sans)"],
   },
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,6 +11,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      primary: {
+        DEFAULT: "#4169E1", // Patiently blue
+        foreground: "hsl(var(--primary-foreground))",
+      },
+      secondary: {
+        DEFAULT: "#FF7F6F",
+        foreground: "hsl(var(--secondary-foreground))",
+      },
+      destructive: {
+        DEFAULT: "hsl(var(--destructive))",
+        foreground: "hsl(var(--destructive-foreground))",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
